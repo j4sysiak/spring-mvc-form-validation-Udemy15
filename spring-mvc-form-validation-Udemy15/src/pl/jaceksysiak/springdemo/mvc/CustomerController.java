@@ -24,20 +24,7 @@ public class CustomerController {
 		return "customer-form";
 	}
 	
-	
-	
 
-	// add an initbinder ... to convert trim input strings
-	// remove leading and trailing whitespace
-	// resolve issue for our validation
-	/*
-	@InitBinder
-	public void initBinder(WebDataBinder dataBinder) {
-		
-		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
-		
-		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
-	}
 
 	@RequestMapping("/processForm")
 	public String processForm(
@@ -53,6 +40,20 @@ public class CustomerController {
 			return "customer-confirmation";
 		}
 	}
+	
+
+	// add an initbinder ... to convert trim input strings
+	// remove leading and trailing whitespace
+	// resolve issue for our validation
+	/*
+	@InitBinder
+	public void initBinder(WebDataBinder dataBinder) {
+		
+		StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+		
+		dataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+	}
+
 	*/
 }
 
